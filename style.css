@@ -1,0 +1,202 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f5f9;
+  color: #242832;
+}
+
+.navbar {
+  background: #20232a;
+  color: white;
+  padding: 17px 20px;
+}
+
+.nav-inner {
+  max-width: 1050px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.heading h2 {
+  margin-bottom: 5px;
+}
+
+.heading p, .card p {
+  color: #707783;
+  font-size: 13px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 22px 0;
+}
+
+.card, .panel {
+  background: white;
+  border-radius: 7px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.card p {
+  margin: 0 0 10px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.panel {
+  margin-bottom: 20px;
+}
+
+.panel h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.form-grid, .filters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d9dce4;
+  border-radius: 5px;
+  background: white;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #b8d2ff;
+  border-color: #2878e8;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #1769e0;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.secondary {
+  background: #e8eaf0;
+  color: #303541;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+th, td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #e7e9ef;
+  text-align: left;
+}
+
+th {
+  background: #f7f8fb;
+}
+
+.income {
+  color: #16834a;
+  font-weight: bold;
+}
+
+.expense {
+  color: #d33c45;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background: #fff0f0;
+  color: #c62828;
+  padding: 7px 10px;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  padding: 15px;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  padding: 15px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid, .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .card, .panel {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 19px;
+  }
+}
